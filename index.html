@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BookMyTicket - Book Verified Tickets for Events, Concerts, Sports & Theatres...</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Book Tickets">
+  	<meta name="keywords" content="Events, Concerts, Sports, Theatres">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="index.css">
+  	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan&display=swap" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	<div id="header">
+		<div class="container-fluid">
+			<div class="row slideanim">
+				<div class="col-md-4" id="logo">
+					<a href="index.html"><img src="logo.png" height="120px" width="220px"></a>
+				</div>
+				<div class="col-md-8" id="menu-items">
+					<ul>
+						<li><a href="explore.html"><b>Explore</b></a></li>
+						<li><a href=""><b>FAQ's</b></a></li>
+						<li ><a href=""><b>Sign In</b></a></li>
+						<li><a href="contactus.html"><b>Contact us</b></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HEADER -->
+
+	<!-- SEARCH BAR -->
+	<div class="main-search" align="center">
+		<div class="container-fluid">
+			<div class="row slideanim">
+				<div class="col-md-12">
+					<input type="text" name="search-bar" placeholder="Search events, concerts, & many more..." id="search">
+					<button onclick="getLocation()" id="locate">Locate me.</button>
+					<button id="explore">Search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SEARCH BAR -->
+
+	<!-- MAIN BODY -->
+	<div class="main-body" >
+		<div id="welcome">
+			<div id="services" class="container-fluid text-center">
+  				<div class="row slideanim">
+    				<div class="col-sm-4" id="image">
+      					<img src="experience.png">
+      					<br><br>
+      					<h4 style="letter-spacing: 0.8px">EXPERIENCE</h4>
+      					<p>Have a great experience at <br>every event...</p>
+    				</div>
+    				<div class="col-sm-4" id="image">
+      					<img src="network.png">
+      					<br><br>
+      					<h4 style="letter-spacing: 0.8px">NETWORKING</h4>
+      					<p>Connect with & exchange great ideas<br> with like minded people...</p>
+    				</div>
+    				<div class="col-sm-4" id="image">
+      					<img src="party.png">
+      					<br><br>
+      					<h4 style="letter-spacing: 0.8px">AFTERPARTY</h4>
+      					<p>Celebrate & create great memories<br> with your friends...</p>
+    				</div>
+    			</div>
+    		</div>
+		</div>
+		<div id="quote">
+			<div class="container-fluid">
+				<div class="row slideanim">
+					<div class="col-md-12">
+						<p align="center" style="font-family: 'Baloo Bhaijaan', cursive; font-size: 40px;">"Memory is deceptive because it's colored by<br> today's events."</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CATEGORIES -->
+		<div id="categories" style="background-color: #efefef">
+			<div class="container-fluid">
+				<br><br>
+				<h1 align="center" style="font-family: 'Baloo Bhaijaan', cursive;">Categories</h1>
+				<br><br>
+				<h2 style="font-family: 'Baloo Bhaijaan', cursive;">Concerts</h2>
+				<br>
+				<div class="row slideanim" align="center" id="concerts">
+					<div class="col-lg-4" id="category-img">
+						<img src="e1.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e2.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e3.jpg" style="border-radius: 5px;">
+					</div>
+				</div>
+				<br><br><br>
+
+				<h2 style="font-family: 'Baloo Bhaijaan', cursive;">Sports</h2>
+				<br>
+				<div class="row slideanim" align="center" id="sports">
+					<div class="col-lg-4" id="category-img">
+						<img src="e4.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e5.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e6.jpg" style="border-radius: 5px;">
+					</div>
+				</div>
+				<br><br><br>
+
+				<h2 style="font-family: 'Baloo Bhaijaan', cursive;">Art & Theatre</h2>
+				<br>
+				<div class="row slideanim" align="center" id="art">
+					<div class="col-lg-4" id="category-img">
+						<img src="e7.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e8.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e9.jpg" style="border-radius: 5px;">
+					</div>
+				</div>
+				<br><br><br>
+
+				<h2 style="font-family: 'Baloo Bhaijaan', cursive;">Family</h2>
+				<br>
+				<div class="row slideanim" align="center" id="family">
+					<div class="col-lg-4" id="category-img">
+						<img src="e10.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e11.jpg" style="border-radius: 5px;">
+					</div>
+					<div class="col-lg-4" id="category-img">
+						<img src="e12.jpg" style="border-radius: 5px;">
+					</div>
+				</div>
+				<br><br><br>
+				<p align="center" id="more"><a href="explore.html" style="color: white; outline: none; border: none; text-decoration: none;">Explore</a></p>
+				<br>
+			</div>
+		</div>
+		<!-- CATEGORIES -->
+
+	
+		<!-- SECURITY BLOCK -->
+		<div id="security-block">
+			<div id="container" class="container-fluid text-center">
+				<br>
+				<h2>FEATURES</h2>
+				<br><br>
+  				<div class="row slideanim" id="security">
+    				<div class="col-sm-3">
+      					<img src="security-payment.png">
+      					<br><br>
+    	  				<h4 style="letter-spacing: 0.8px">Secure Payments</h4>
+      					<p>Moving your card details at much <br> secure place.</p>
+    				</div>
+    				<div class="col-sm-3">
+      					<img src="trustpay.png">
+      					<br><br>
+    	  				<h4 style="letter-spacing: 0.8px">Trustpay</h4>
+      					<p>100% Payment protection<br> Easy refunds.</p>
+    				</div>
+    				<div class="col-sm-3">
+	      				<img src="support.png">
+    	  				<br><br>
+      					<h4 style="letter-spacing: 0.8px">Support</h4>
+      					<p>Got a question? Look no further.<br> Check our FAQ's or contact us.</p>
+    				</div>
+	    			<div class="col-sm-3">
+    	  				<img src="smartphone.png">
+      					<br><br>
+      					<h4 style="letter-spacing: 0.8px">Book on the Go</h4>
+      					<p>Download our app! and get exciting<br>offers at your fingertips.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<br><br>
+    	<!-- SECURITY BLOCK -->
+	</div>
+	<!-- MAIN BODY -->
+
+	<div class="footer">
+		<div class=" container-fluid">
+			<div class="row slideanim">
+				<div class="col-md-6" id="footer-nav">
+					<br>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About us</a></li>
+						<li><a href="">Contact us</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6" id="social-links">
+					<br>
+					<ul>
+						<li><a href=""><img src="facebook.png"></a></li>
+						<li><a href=""><img src="twitter.png"></a></li>
+						<li><a href=""><img src="linkedin.png"></a></li>
+						<li><a href=""><img src="pinterest.png"></a></li>
+						<li><a href=""><img src="playstore.png"></a></li>
+						<li><a href=""><img src="applestore.png"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row slideanim">
+				<div class="col-md-12" id="footer-description">
+					<p align="center" style="color: white">Credits:- Roubal Sehgal<br>
+						<a href="https://roubalsehgal.github.io/resume/" target="_blank">RESUME</a></p>
+					<p>	Events in Bangalore<br>
+
+						<br>Bengaluru - A city known for its parks, is every party animal’s favourite party place thus making it the city of nightlife. Entertainment events - Concerts, Rock shows, <br>Night parties, Music shows, DJ Parties, unlimited alcohol parties, and Adventurous activities like rock climbing, trekking, rappelling, camping, mountaineering and <br>many more, are organized in the city throughout the year.
+						<br>
+						<br>The city located in the Southern part of India is also a hub for sports events, Joy rides, and events for kids. Bengalureans love to attend parties especially weekend parties.<br>The residents leave no stone unturned to book tickets online for an upcoming party. No season is dry season when it comes to partying in Bengaluru.
+						<br>
+ 						<br>BookMyTicket helps you explore the most happening and upcoming events in Bengaluru to plan an exciting week and make it a super awesome one. You can also filter your search by the type of event you would like to attend such as Art and Exhibitions, Plays and Comedy, Festivals, etc. Just tell us the event you would like to include in your weekend plan.
+ 					</p>
+					<p align="center">Copyright © 2019 BookMyTicket.com. All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	  <script src="findfood.js"></script>
+	  <script>
+	    $(window).scroll(function() {
+	        var scroll = $(window).scrollTop();
+	        if (scroll > 0) {
+	            $("#header").addClass("active");
+	        }
+	        else {
+	            $("#header").removeClass("active");
+	        }
+	    });
+	    </script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
