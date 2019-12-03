@@ -1,15 +1,17 @@
 var x = document.getElementById("search");
+
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
-    alert("Geolocation is not supported by this browser.");
+    alter("Geolocation is not supported by this browser.");
   }
 }
 
 function showPosition(position) {
-	x.value = "NewYork, United States"
+  x.value = "New York, United States of America"
 }
-function exploreIt(){
+
+function showEvents() {
 	window.open("explore.html")
 }
