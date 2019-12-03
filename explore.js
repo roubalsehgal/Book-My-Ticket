@@ -27,7 +27,7 @@
 
 				var genre = document.createElement('p')
 				genre.setAttribute('id', 'genre')
-				genre.innerHTML="genre: "+res_data._embedded.events[i].classifications[0].genre.name;
+				genre.innerHTML="Genre: "+res_data._embedded.events[i].classifications[0].genre.name;
 				img_div.appendChild(genre)
 
 				var name = document.createElement('h4')
@@ -36,6 +36,16 @@
 				img_div.appendChild(name)
 				console.log(name)
 
+				var date = document.createElement('h6')
+				date.setAttribute('id', 'date')
+				date.innerHTML="Date: "+res_data._embedded.events[i].dates.start.localDate
+				img_div.appendChild(date)
+
+				var T = document.createElement('h6')
+				T.setAttribute('id', 'time')
+				T.innerHTML="Time: "+res_data._embedded.events[i].dates.start.localTime
+				img_div.appendChild(T)
+				
 			}
 		}
 	}
