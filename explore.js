@@ -1,5 +1,4 @@
 
-
 	var url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=lgBmSsjcDDRRhKuGWt00Bwkwi9DGx1pg&countryCode=US&marketId=35"
 
 	var xHR = new XMLHttpRequest()
@@ -45,9 +44,8 @@
 				T.setAttribute('id', 'time')
 				T.innerHTML="Time: "+res_data._embedded.events[i].dates.start.localTime
 				img_div.appendChild(T)
-				
+
 			}
 		}
 	}
 	xHR.send()
-

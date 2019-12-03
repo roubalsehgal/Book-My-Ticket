@@ -1,15 +1,15 @@
-Get Location through Browser
-
-var x = document.getElementById("demo");
+var x = document.getElementById("search");
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    alert("Geolocation is not supported by this browser.");
   }
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+	x.value = "NewYork, United States"
+}
+function exploreIt(){
+	window.open("explore.html")
 }
