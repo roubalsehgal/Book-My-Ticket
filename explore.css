@@ -1,5 +1,10 @@
-#header{
-	position: relative;
+.sticky {
+	position: fixed;
+    top: 0;
+	width: 100%;
+	background-color: white;
+	z-index:9000;
+	overflow: auto;
 }
 #input_search{
 	margin-top: 5.6%;
